@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Diri</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px 0;
+        }
+
+        .content {
+            flex: 3;
+            padding: 0 20px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .featured-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+<header>
+    <div class="jumbotron">
+        <h1>Welcome!</h1>
+        <p>Web ini ditampilkan bertujuan untuk memenuhi proyek dari Dicoding</p>        
+    </div>
+   
+    <nav>
+        <ul>
+            <li><a href="#nama">Nama</a></li>
+            <li><a href="#jurusan">Jurusan</a></li>
+            <li><a href="#asal">Asal</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <section>
+            <h3>Informasi Pengguna</h3>
+            <table>
+                <tr>
+                    <th>Negara</th>
+                    <td>Indonesia</td>
+                </tr>
+                <tr>
+                    <th>Tempat/Tanggal Lahir</th>
+                    <td>Lubuk Sikaping/02 Oktober 2003</td>
+                </tr>
+                <tr>
+                    <th>Hobi</th>
+                    <td>Bermusik</td>
+                </tr>
+                <tr>
+                    <th>Bahasa Daerah</th>
+                    <td>Minang</td>
+                </tr>
+                <tr>
+                    <th>Nomor Telepon</th>
+                    <td>+62 821 7277 1959</td>
+                </tr>
+            </table>
+        </section>
+
+        <article id="nama" class="card">
+            <h2>Nama</h2>
+            <img src="assets/image/khaira.png" alt="nama" class="featured-image"/>
+            <p>Nama saya Khairatul Hutami, orang-orang biasa panggil saya Khaira. Umur saya 20 tahun.</p>
+        </article>
+
+        <article id="jurusan" class="card">
+            <h2>Jurusan</h2>
+            <img src="assets/image/SI.png" alt="jurusan" class="featured-image"/>
+            <p>Sekarang saya adalah mahasiswi tingkat II dari D3 Sistem Informasi di Universitas Telkom.</p>
+        </article>
+        
+        <section class="card">
+            <h3 id="asal">Asal</h3>
+            <img src="assets/image/RG.png" alt="asaldaerah" class="featured-image"/>
+            <p>Saya berasal dari kota khas rendang yaitu Padang.</p>
+        </section>
+    </div>
+
+    <aside>
+        <article class="profile card">
+            <header>
+                <h2>Kota Padang</h2>
+                <p>Rumah Gadang</p>
+                <figure>
+                    <img src="assets/image/RG.png" alt="Rumah Gadang">
+                    <figcaption>Lambang</figcaption>
+                </figure>
+            </header>
+        </article>
+    </aside>
+</main>
+
+<footer>
+    <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+</footer>
+
+</body>
+</html>
